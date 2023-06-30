@@ -1,0 +1,77 @@
+* SPICE3 file created from avsd_opamp_layout.ext - technology: sky130A
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /mnt/tools4/open_pdks/sky130/sky130B/libs.tech/ngspice/corners/tt.spice
+.include /mnt/tools4/open_pdks/sky130/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /mnt/tools4/open_pdks/sky130/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /mnt/tools4/open_pdks/sky130/sky130B/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+X0 vss a_n584_n4184# out2 vss sky130_fd_pr__nfet_01v8 ad=71.1 pd=128 as=66.1 ps=128 w=62.9 l=1
+X1 vdd a_n56_612# a_n56_612# vdd sky130_fd_pr__pfet_01v8 ad=11.3 pd=22.3 as=10.5 ps=22.1 w=10 l=1
+X2 vss a_n584_n4184# a_362_n34# vss sky130_fd_pr__nfet_01v8 ad=22.6 pd=42.3 as=21 ps=42.1 w=20 l=1
+X3 a_1164_n34# a_n56_612# vdd vdd sky130_fd_pr__pfet_01v8 ad=11.3 pd=22.3 as=10.5 ps=22.1 w=10 l=1
+X4 a_1164_n34# in2 a_362_n34# vss sky130_fd_pr__nfet_01v8 ad=1.97 pd=5.78 as=1.83 ps=5.62 w=1.79 l=1
+X5 a_n1032_n1996# vdd vss sky130_fd_pr__res_generic_nd w=0.27 l=24.9
+X6 a_362_n34# in1 a_n56_612# vss sky130_fd_pr__nfet_01v8 ad=1.97 pd=5.78 as=1.83 ps=5.62 w=1.79 l=1
+X7 a_n736_n2018# a_n880_3022# vss sky130_fd_pr__res_generic_nd w=0.27 l=24.9
+X8 a_n1032_n1996# a_n880_3022# vss sky130_fd_pr__res_generic_nd w=0.27 l=24.9
+X9 a_n584_n4184# a_n736_n2018# vss sky130_fd_pr__res_generic_nd w=0.265 l=24.9
+X10 vss a_n584_n4184# a_n584_n4184# vss sky130_fd_pr__nfet_01v8 ad=11.3 pd=22.3 as=10.5 ps=22.1 w=10 l=1
+X11 out2 a_1164_n34# vdd vdd sky130_fd_pr__pfet_01v8 ad=71.1 pd=128 as=66.1 ps=128 w=62.9 l=1
+C0 a_n736_n2018# a_n584_n4184# 0.0545f
+C1 vdd a_n736_n2018# 0.139f
+C2 a_n1032_n1996# a_n736_n2018# 0.0476f
+C3 a_1164_n34# a_n56_612# 0.0951f
+C4 a_1164_n34# in1 3.19e-19
+C5 a_1164_n34# in2 0.0568f
+C6 a_1164_n34# a_362_n34# 0.0296f
+C7 vdd a_n880_3022# 0.0867f
+C8 a_1164_n34# out2 0.243f
+C9 vdd a_1164_n34# 0.85f
+C10 a_n56_612# in1 0.0689f
+C11 a_n56_612# in2 0.0252f
+C12 in1 in2 0.0156f
+C13 a_n56_612# a_362_n34# 0.03f
+C14 in1 a_362_n34# 0.13f
+C15 a_362_n34# in2 0.0518f
+C16 a_n880_3022# a_n736_n2018# 0.025f
+C17 a_n56_612# out2 0.00155f
+C18 in1 a_n584_n4184# 7.1e-19
+C19 a_n584_n4184# in2 0.00174f
+C20 in2 out2 1.86e-19
+C21 vdd a_n56_612# 2.21f
+C22 vdd in1 0.0064f
+C23 vdd in2 0.0133f
+C24 a_n584_n4184# a_362_n34# 0.132f
+C25 vdd a_362_n34# 0.0414f
+C26 a_n584_n4184# out2 0.121f
+C27 vdd a_n584_n4184# 0.00321f
+C28 vdd out2 0.84f
+C29 a_n736_n2018# a_n56_612# 0.0988f
+C30 a_n736_n2018# in1 0.00528f
+C31 a_n736_n2018# in2 2.38e-20
+C32 a_n736_n2018# a_362_n34# 0.0154f
+C33 vss vss 2.73f 0
+C34 a_362_n34# vss 0.487f 0
+C35 in2 vss 0.871f 0
+C36 in1 vss 0.698f 0
+C37 a_n584_n4184# vss 5.08f 0
+C38 out2 vss 0.63f 0
+C39 a_n56_612# vss 0.517f 0
+C40 a_n736_n2018# vss 2.2f 0
+C41 a_n1032_n1996# vss 0.159f 0
+C42 a_n880_3022# vss 0.0748f 0
+C43 a_1164_n34# vss 0.582f 0
+C44 vdd vss 0.122p 0
+
+v1  vdd gnd dc 1
+v2  vss gnd dc -1
+v3 in1 gnd sine(0 1m 60)
+v4 in2 gnd sine(0 -1m 60)
+.tran 1m 0.5
+.control
+run
+plot v(out2)
+.endc
+.end

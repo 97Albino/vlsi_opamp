@@ -1,0 +1,23 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1685536167
+<< checkpaint >>
+rect -1313 -713 1677 4003
+rect -1260 -2060 1460 -713
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+use sky130_fd_pr__res_high_po_0p69_C2P39T  r0
+timestamp 1685533324
+transform 1 0 182 0 1 1645
+box -235 -1098 235 1098
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 r0
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 r1
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 gnd
+port 2 nsew
+<< end >>

@@ -1,0 +1,359 @@
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p69 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p69 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_0p69  |Circuit 2: sky130_fd_pr__res_high_po_0p69  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_0p69 and sky130_fd_pr__res_high_po_0p69 are equivalent.
+
+Class opamp (0):  Merged 2 series devices.
+Class opamp (1):  Merged 3 parallel devices.
+Subcircuit summary:
+Circuit 1: opamp                           |Circuit 2: opamp                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (5)                |sky130_fd_pr__nfet_01v8 (7->5)             
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (4->3)             
+sky130_fd_pr__res_high_po_0p69 (3->1)      |sky130_fd_pr__res_high_po_0p69 (3) **Misma 
+(no matching element)                      |c (32)                                     
+(no matching element)                      |**FLOATING (6)                             
+Number of devices: 9 **Mismatch**          |Number of devices: 49 **Mismatch**         
+Number of nets: 9 **Mismatch**             |Number of nets: 11 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: opamp                           |Circuit 2: opamp                           
+
+---------------------------------------------------------------------------------------
+Net: node1                                 |Net: m1_5662_956#                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__res_high_po_0p69/(1|2) = 2 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  c/top = 1                                
+  sky130_fd_pr__pfet_01v8/2 = 2            |  **FLOATING/top = 1                       
+                                           |                                           
+Net: vss                                   |Net: m1_6026_9388#                         
+  sky130_fd_pr__nfet_01v8/4 = 5            |  sky130_fd_pr__res_high_po_0p69/(1|2) = 2 
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  c/bottom = 1                             
+  sky130_fd_pr__res_high_po_0p69/3 = 1     |  **FLOATING/top = 1                       
+                                           |                                           
+Net: vdd                                   |Net: vdd                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+  sky130_fd_pr__pfet_01v8/4 = 3            |  sky130_fd_pr__pfet_01v8/4 = 3            
+  sky130_fd_pr__res_high_po_0p69/(1|2) = 1 |  sky130_fd_pr__res_high_po_0p69/(1|2) = 1 
+                                           |  c/top = 5                                
+                                           |  c/bottom = 4                             
+                                           |                                           
+Net: ref                                   |Net: in2                                   
+  sky130_fd_pr__nfet_01v8/2 = 3            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  c/bottom = 7                             
+  sky130_fd_pr__res_high_po_0p69/(1|2) = 1 |  c/top = 1                                
+                                           |                                           
+Net: out2                                  |Net: out2                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  c/bottom = 1                             
+                                           |  c/top = 5                                
+                                           |                                           
+(no matching net)                          |Net: m1_7080_2810#                         
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/2 = 2            
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |  c/bottom = 5                             
+                                           |  c/top = 2                                
+                                           |  **FLOATING/top = 1                       
+                                           |                                           
+(no matching net)                          |Net: gnd                                   
+                                           |  sky130_fd_pr__nfet_01v8/4 = 5            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
+                                           |  sky130_fd_pr__res_high_po_0p69/3 = 3     
+                                           |  c/bottom = 4                             
+                                           |  **FLOATING/bottom = 6                    
+                                           |                                           
+(no matching net)                          |Net: a_8466_4122#                          
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  c/bottom = 2                             
+                                           |  c/top = 5                                
+                                           |  **FLOATING/top = 1                       
+                                           |                                           
+(no matching net)                          |Net: in1                                   
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  c/bottom = 6                             
+                                           |  c/top = 2                                
+                                           |                                           
+(no matching net)                          |Net: a_9536_122#                           
+                                           |  sky130_fd_pr__nfet_01v8/2 = 3            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__res_high_po_0p69/(1|2) = 1 
+                                           |  c/top = 7                                
+                                           |  **FLOATING/top = 1                       
+                                           |                                           
+(no matching net)                          |Net: m1_7402_2810#                         
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
+                                           |  c/top = 4                                
+                                           |  c/bottom = 2                             
+                                           |  **FLOATING/top = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: out1                                  |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: node2                                 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: in2                                   |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: in1                                   |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: opamp                           |Circuit 2: opamp                           
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__res_high_po_0p69:R |Instance: sky130_fd_pr__res_high_po_0p69:1 
+  (1,2) = (7,5)                            |  (1,2) = (4,4)                            
+  3 = 9                                    |  3 = 21                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__res_high_po_0p69:1 
+                                           |  (1,2) = (16,4)                           
+                                           |  3 = 21                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__res_high_po_0p69:1 
+                                           |  (1,2) = (13,4)                           
+                                           |  3 = 21                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: c:0                              
+                                           |  top = 16                                 
+                                           |  bottom = 4                               
+                                           |                                           
+(no matching instance)                     |Instance: c:1                              
+                                           |  top = 13                                 
+                                           |  bottom = 8                               
+                                           |                                           
+(no matching instance)                     |Instance: c:2                              
+                                           |  top = 8                                  
+                                           |  bottom = 11                              
+                                           |                                           
+(no matching instance)                     |Instance: c:3                              
+                                           |  top = 13                                 
+                                           |  bottom = 12                              
+                                           |                                           
+(no matching instance)                     |Instance: c:4                              
+                                           |  top = 11                                 
+                                           |  bottom = 12                              
+                                           |                                           
+(no matching instance)                     |Instance: c:5                              
+                                           |  top = 13                                 
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:6                              
+                                           |  top = 11                                 
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:7                              
+                                           |  top = 8                                  
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:8                              
+                                           |  top = 12                                 
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:9                              
+                                           |  top = 8                                  
+                                           |  bottom = 16                              
+                                           |                                           
+(no matching instance)                     |Instance: c:10                             
+                                           |  top = 10                                 
+                                           |  bottom = 12                              
+                                           |                                           
+(no matching instance)                     |Instance: c:11                             
+                                           |  top = 16                                 
+                                           |  bottom = 12                              
+                                           |                                           
+(no matching instance)                     |Instance: c:12                             
+                                           |  top = 13                                 
+                                           |  bottom = 11                              
+                                           |                                           
+(no matching instance)                     |Instance: c:13                             
+                                           |  top = 9                                  
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:14                             
+                                           |  top = 10                                 
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:15                             
+                                           |  top = 16                                 
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:16                             
+                                           |  top = 13                                 
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:17                             
+                                           |  top = 13                                 
+                                           |  bottom = 10                              
+                                           |                                           
+(no matching instance)                     |Instance: c:18                             
+                                           |  top = 11                                 
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:19                             
+                                           |  top = 13                                 
+                                           |  bottom = 16                              
+                                           |                                           
+(no matching instance)                     |Instance: c:20                             
+                                           |  top = 11                                 
+                                           |  bottom = 10                              
+                                           |                                           
+(no matching instance)                     |Instance: c:21                             
+                                           |  top = 11                                 
+                                           |  bottom = 16                              
+                                           |                                           
+(no matching instance)                     |Instance: c:22                             
+                                           |  top = 8                                  
+                                           |  bottom = 12                              
+                                           |                                           
+(no matching instance)                     |Instance: c:23                             
+                                           |  top = 10                                 
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:24                             
+                                           |  top = 16                                 
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:25                             
+                                           |  top = 10                                 
+                                           |  bottom = 16                              
+                                           |                                           
+(no matching instance)                     |Instance: c:26                             
+                                           |  top = 4                                  
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:27                             
+                                           |  top = 12                                 
+                                           |  bottom = 9                               
+                                           |                                           
+(no matching instance)                     |Instance: c:28                             
+                                           |  top = 16                                 
+                                           |  bottom = 21                              
+                                           |                                           
+(no matching instance)                     |Instance: c:31                             
+                                           |  top = 8                                  
+                                           |  bottom = 21                              
+                                           |                                           
+(no matching instance)                     |Instance: c:35                             
+                                           |  top = 9                                  
+                                           |  bottom = 21                              
+                                           |                                           
+(no matching instance)                     |Instance: c:37                             
+                                           |  top = 9                                  
+                                           |  bottom = 21                              
+                                           |                                           
+(no matching instance)                     |Instance: **FLOATING:29                    
+                                           |  top = 4                                  
+                                           |  bottom = 21                              
+                                           |                                           
+(no matching instance)                     |Instance: **FLOATING:30                    
+                                           |  top = 4                                  
+                                           |  bottom = 21                              
+                                           |                                           
+(no matching instance)                     |Instance: **FLOATING:32                    
+                                           |  top = 10                                 
+                                           |  bottom = 21                              
+                                           |                                           
+(no matching instance)                     |Instance: **FLOATING:33                    
+                                           |  top = 13                                 
+                                           |  bottom = 21                              
+                                           |                                           
+(no matching instance)                     |Instance: **FLOATING:34                    
+                                           |  top = 11                                 
+                                           |  bottom = 21                              
+                                           |                                           
+(no matching instance)                     |Instance: **FLOATING:36                    
+                                           |  top = 12                                 
+                                           |  bottom = 21                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v8:m3       |Instance: sky130_fd_pr__pfet_01v8:7        
+  (1,3) = (7,4)                            |  (1,3) = (16,8)                           
+  2 = 4                                    |  2 = 11                                   
+  4 = 7                                    |  4 = 16                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:m7       |Instance: sky130_fd_pr__pfet_01v8:3        
+  (1,3) = (7,2)                            |  (1,3) = (16,11)                          
+  2 = 3                                    |  2 = 12                                   
+  4 = 7                                    |  4 = 16                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:m4       |Instance: sky130_fd_pr__pfet_01v8:2        
+  (1,3) = (7,3)                            |  (1,3) = (16,12)                          
+  2 = 4                                    |  2 = 12                                   
+  4 = 7                                    |  4 = 16                                   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8:m8       |Instance: sky130_fd_pr__nfet_01v8:9        
+  (1,3) = (9,2)                            |  (1,3) = (21,8)                           
+  2 = 5                                    |  2 = 13                                   
+  4 = 9                                    |  4 = 21                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:m6       |Instance: sky130_fd_pr__nfet_01v8:6        
+  (1,3) = (9,5)                            |  (1,3) = (21,13)                          
+  2 = 5                                    |  2 = 13                                   
+  4 = 9                                    |  4 = 21                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:m5       |Instance: sky130_fd_pr__nfet_01v8:4        
+  (1,3) = (9,3)                            |  (1,3) = (21,10)                          
+  2 = 5                                    |  2 = 13                                   
+  4 = 9                                    |  4 = 21                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:m2       |Instance: sky130_fd_pr__nfet_01v8:1        
+  (1,3) = (3,3)                            |  (1,3) = (11,10)                          
+  2 = 1                                    |  2 = 9                                    
+  4 = 9                                    |  4 = 21                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:m1       |Instance: sky130_fd_pr__nfet_01v8:0        
+  (1,3) = (4,3)                            |  (1,3) = (12,10)                          
+  2 = 1                                    |  2 = 9                                    
+  4 = 9                                    |  4 = 21                                   
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.

@@ -1,0 +1,5 @@
+* SPICE3 file created from res.ext - technology: sky130B
+
+.subckt res r0 r1 gnd
+X0 r0 r1 VSUBS sky130_fd_pr__res_high_po_0p69 l=5
+.ends

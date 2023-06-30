@@ -1,0 +1,56 @@
+* SPI*CE3 file *Created from opamp.ext - te*Chnology: sky130B
+
+.subckt opamp vdd gnd in1 in2 out2
+X0 m1_7402_2810# in1 m1_7080_2810# gnd sky130_fd_pr__nfet_01v8 ad=0.519 pd=4.16 as=0.519 ps=4.16 w=1.79 l=1
+X1 a_8466_4122# in2 m1_7402_2810# gnd sky130_fd_pr__nfet_01v8 ad=0.519 pd=4.16 as=3.94 ps=28.9 w=1.79 l=1
+X2 vdd m1_7080_2810# m1_7080_2810# vdd sky130_fd_pr__pfet_01v8 ad=2.9 pd=20.6 as=2.9 ps=20.6 w=10 l=1
+X3 a_8466_4122# m1_7080_2810# vdd vdd sky130_fd_pr__pfet_01v8 ad=2.9 pd=20.6 as=24 ps=168 w=10 l=1
+X4 m1_7402_2810# a_9536_122# gnd gnd sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.3 as=2.9 ps=20.6 w=10 l=1
+X5 gnd a_9536_122# m1_7402_2810# gnd sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.6 as=1.45 ps=10.3 w=10 l=1
+X6 a_9536_122# a_9536_122# gnd gnd sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.6 as=2.9 ps=20.6 w=10 l=1
+X7 vdd a_8466_4122# out2 vdd sky130_fd_pr__pfet_01v8 ad=9.11 pd=63.4 as=4.56 ps=31.7 w=31.4 l=1
+X8 out2 a_8466_4122# vdd vdd sky130_fd_pr__pfet_01v8 ad=4.56 pd=31.7 as=9.11 ps=63.4 w=31.4 l=1
+X9 out2 a_9536_122# gnd gnd sky130_fd_pr__nfet_01v8 ad=4.56 pd=31.7 as=9.11 ps=63.4 w=31.4 l=1
+X10 gnd a_9536_122# out2 gnd sky130_fd_pr__nfet_01v8 ad=9.11 pd=63.4 as=4.56 ps=31.7 w=31.4 l=1
+X11 m1_5662_956# m1_6026_9388# gnd sky130_fd_pr__res_high_po_0p69 l=40
+X12 m1_5662_956# vdd gnd sky130_fd_pr__res_high_po_0p69 l=40
+X13 a_9536_122# m1_6026_9388# gnd sky130_fd_pr__res_high_po_0p69 l=20
+*C0 vdd m1_6026_9388# 0.214f
+*C1 a_9536_122# out2 6.15f
+*C2 out2 a_8466_4122# 6.19f
+*C3 a_9536_122# m1_7080_2810# 0.159f
+*C4 a_8466_4122# m1_7080_2810# 0.299f
+*C5 a_9536_122# in1 0.686f
+*C6 a_8466_4122# in1 1.48e-19
+*C7 out2 in2 0.0889f
+*C8 m1_7080_2810# in2 0.00471f
+*C9 out2 vdd 3.93f
+*C10 m1_7402_2810# m1_7080_2810# 0.0374f
+*C11 vdd m1_7080_2810# 2.64f
+*C12 a_9536_122# a_8466_4122# 3.13e-19
+*C13 in1 in2 0.0715f
+*C14 m1_7402_2810# in1 0.491f
+*C15 vdd in1 0.00164f
+*C16 a_9536_122# in2 0.137f
+*C17 a_9536_122# m1_7402_2810# 2.16f
+*C18 a_8466_4122# in2 0.252f
+*C19 a_9536_122# vdd 0.0294f
+*C20 a_8466_4122# m1_7402_2810# 0.0374f
+*C21 a_8466_4122# vdd 7.6f
+*C22 out2 m1_7080_2810# 9.12e-19
+*C23 m1_7402_2810# in2 0.5f
+*C24 vdd in2 0.00247f
+*C25 m1_7402_2810# vdd 0.00114f
+*C26 m1_5662_956# in1 0.00357f
+*C27 m1_7080_2810# in1 0.255f
+*C28 vdd gnd 44f
+*C29 m1_6026_9388# gnd 2.28f 
+*C30 m1_5662_956# gnd 1.41f 
+*C31 out2 gnd 6.14f
+*C32 m1_7402_2810# gnd 1.71f 
+*C33 a_9536_122# gnd 17.6f 
+*C34 a_8466_4122# gnd 1.61f 
+*C35 in2 gnd 2.6f
+*C36 m1_7080_2810# gnd 1.69f 
+*C37 in1 gnd 2.46f
+.ends

@@ -1,0 +1,24 @@
+* SPICE3 file created from opamp.ext - technology: sky130B
+
+.subckt opamp vdd vss in1 in2 out2
+X0 m1_10400_4732# in1 m1_10284_2750# vss sky130_fd_pr__nfet_01v8 ad=0.519 pd=4.16 as=0.519 ps=4.16 w=1.79 l=1
+X1 m1_10400_4732# m1_10400_4732# vdd vdd sky130_fd_pr__pfet_01v8 ad=2.9 pd=20.6 as=2.9 ps=20.6 w=10 l=1
+X2 m1_10284_2750# in2 m1_10790_3632# vss sky130_fd_pr__nfet_01v8 ad=6.84 pd=49.5 as=0.519 ps=4.16 w=1.79 l=1
+X3 vdd m1_10400_4732# m1_10790_3632# vdd sky130_fd_pr__pfet_01v8 ad=24 pd=168 as=2.9 ps=20.6 w=10 l=1
+X4 vss m1_9508_2730# m1_10284_2750# vss sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.3 as=2.9 ps=20.6 w=10 l=1
+X5 m1_10284_2750# m1_9508_2730# vss vss sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.6 as=1.45 ps=10.3 w=10 l=1
+X6 m1_9508_2730# m1_8896_9398# vss sky130_fd_pr__res_high_po_0p69 l=20
+X7 m1_9508_2730# m1_9508_2730# vss vss sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.6 as=2.9 ps=20.6 w=10 l=1
+X8 vdd m1_11600_4732# out2 vdd sky130_fd_pr__pfet_01v8 ad=9.11 pd=63.4 as=4.56 ps=31.7 w=31.4 l=1
+X9 out2 m1_11600_4732# vdd vdd sky130_fd_pr__pfet_01v8 ad=4.56 pd=31.7 as=9.11 ps=63.4 w=31.4 l=1
+X10 out2 m1_9508_2730# vss vss sky130_fd_pr__nfet_01v8 ad=4.56 pd=31.7 as=9.11 ps=63.4 w=31.4 l=1
+X11 vss m1_9508_2730# out2 vss sky130_fd_pr__nfet_01v8 ad=9.11 pd=63.4 as=4.56 ps=31.7 w=31.4 l=1
+X12 m1_8532_966# m1_8896_9398# vss sky130_fd_pr__res_high_po_0p69 l=40
+X13 m1_8532_966# vdd vss sky130_fd_pr__res_high_po_0p69 l=40
+C0 vdd m1_10400_4732# 2f
+C1 vdd out2 3.45f
+C2 out2 vss 5.19f
+C3 m1_9508_2730# vss 8.02f **FLOATING
+C4 m1_10284_2750# vss 3.86f **FLOATING
+C5 vdd vss 37.1f
+.ends

@@ -1,0 +1,376 @@
+* SPICE3 file created from opamp.ext - technology: sky130B
+
+.subckt opamp vdd gnd in1 in2 out2
+X0 m1_7402_2810# in1 m1_7080_2810# gnd sky130_fd_pr__nfet_01v8 ad=0.519 pd=4.16 as=0.519 ps=4.16 w=1.79 l=1
+X1 a_8466_4122# in2 m1_7402_2810# gnd sky130_fd_pr__nfet_01v8 ad=0.519 pd=4.16 as=3.94 ps=28.9 w=1.79 l=1
+X2 vdd m1_7080_2810# m1_7080_2810# vdd sky130_fd_pr__pfet_01v8 ad=2.9 pd=20.6 as=2.9 ps=20.6 w=10 l=1
+X3 a_8466_4122# m1_7080_2810# vdd vdd sky130_fd_pr__pfet_01v8 ad=2.9 pd=20.6 as=24 ps=168 w=10 l=1
+X4 m1_7402_2810# a_9536_122# gnd gnd sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.3 as=2.9 ps=20.6 w=10 l=1
+X5 gnd a_9536_122# m1_7402_2810# gnd sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.6 as=1.45 ps=10.3 w=10 l=1
+X6 a_9536_122# a_9536_122# gnd gnd sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.6 as=2.9 ps=20.6 w=10 l=1
+X7 vdd a_8466_4122# out2 vdd sky130_fd_pr__pfet_01v8 ad=9.11 pd=63.4 as=4.56 ps=31.7 w=31.4 l=1
+X8 out2 a_8466_4122# vdd vdd sky130_fd_pr__pfet_01v8 ad=4.56 pd=31.7 as=9.11 ps=63.4 w=31.4 l=1
+X9 out2 a_9536_122# gnd gnd sky130_fd_pr__nfet_01v8 ad=4.56 pd=31.7 as=9.11 ps=63.4 w=31.4 l=1
+X10 gnd a_9536_122# out2 gnd sky130_fd_pr__nfet_01v8 ad=9.11 pd=63.4 as=4.56 ps=31.7 w=31.4 l=1
+X11 m1_5662_956# m1_6026_9388# gnd sky130_fd_pr__res_high_po_0p69 l=40
+X12 m1_5662_956# vdd gnd sky130_fd_pr__res_high_po_0p69 l=40
+X13 a_9536_122# m1_6026_9388# gnd sky130_fd_pr__res_high_po_0p69 l=20
+C0 vdd m1_6026_9388# 0.214f
+C1 a_9536_122# out2 6.15f
+C2 out2 a_8466_4122# 6.19f
+C3 a_9536_122# m1_7080_2810# 0.159f
+C4 a_8466_4122# m1_7080_2810# 0.299f
+C5 a_9536_122# in1 0.686f
+C6 a_8466_4122# in1 1.48e-19
+C7 out2 in2 0.0889f
+C8 m1_7080_2810# in2 0.00471f
+C9 out2 vdd 3.93f
+C10 m1_7402_2810# m1_7080_2810# 0.0374f
+C11 vdd m1_7080_2810# 2.64f
+C12 a_9536_122# a_8466_4122# 3.13e-19
+C13 in1 in2 0.0715f
+C14 m1_7402_2810# in1 0.491f
+C15 vdd in1 0.00164f
+C16 a_9536_122# in2 0.137f
+C17 a_9536_122# m1_7402_2810# 2.16f
+C18 a_8466_4122# in2 0.252f
+C19 a_9536_122# vdd 0.0294f
+C20 a_8466_4122# m1_7402_2810# 0.0374f
+C21 a_8466_4122# vdd 7.6f
+C22 out2 m1_7080_2810# 9.12e-19
+C23 m1_7402_2810# in2 0.5f
+C24 vdd in2 0.00247f
+C25 m1_7402_2810# vdd 0.00114f
+C26 m1_5662_956# in1 0.00357f
+C27 m1_7080_2810# in1 0.255f
+C28 vdd gnd 44f
+C29 m1_6026_9388# gnd 2.28f **FLOATING
+C30 m1_5662_956# gnd 1.41f **FLOATING
+C31 out2 gnd 6.14f
+C32 m1_7402_2810# gnd 1.71f **FLOATING
+C33 a_9536_122# gnd 17.6f **FLOATING
+C34 a_8466_4122# gnd 1.61f **FLOATING
+C35 in2 gnd 2.6f
+C36 m1_7080_2810# gnd 1.69f **FLOATING
+C37 in1 gnd 2.46f
+.ends
+scale 1000 1 500000
+rnode "out2.n0" 0 114.951 9394 11200 0
+rnode "out2" 0 16085.1 9394 11200 0
+resist "out2" "out2.n0" 0.125
+rnode "vdd.n0" 0 1617.72 8503 10669 0
+rnode "vdd.n1" 0 874.41 8503 10669 0
+rnode "vdd.n2" 0 13.1604 7539 4070 0
+rnode "vdd.n3" 0 28.3385 7296 4053 0
+rnode "vdd.n4" 0 13.3863 7296 4053 0
+rnode "vdd.n5" 0 69.7904 8503 4053 0
+rnode "vdd.n6" 0 59.4599 8503 4053 0
+rnode "vdd.n7" 0 580.585 7782 4053 0
+rnode "vdd.n8" 0 13.3863 7782 4053 0
+rnode "vdd.n9" 0 17.3024 7539 4070 0
+rnode "vdd.n10" 0 7.77218 7782 4053 0
+rnode "vdd.n11" 0 51.1903 8008 4035 0
+rnode "vdd.n12" 0 42.622 7053 5219 0
+rnode "vdd.n13" 0 22.5044 7053 5219 0
+rnode "vdd.n14" 0 18.497 7539 5219 0
+rnode "vdd.n15" 0 18.497 7539 5219 0
+rnode "vdd.n16" 0 1064.41 7539 5219 0
+rnode "vdd.n17" 0 22.5044 8025 5219 0
+rnode "vdd.n18" 0 77.324 8025 5219 0
+rnode "vdd.n19" 0 70.9917 7035 6368 0
+rnode "vdd.n20" 0 13.1604 7539 6368 0
+rnode "vdd.n21" 0 977.683 7296 6385 0
+rnode "vdd.n22" 0 13.3863 7782 6385 0
+rnode "vdd.n23" 0 13.3863 7296 6385 0
+rnode "vdd.n24" 0 269.875 7296 6385 0
+rnode "vdd.n25" 0 1644 8875 7361 0
+rnode "vdd.n26" 0 59.0237 8875 7361 0
+rnode "vdd.n27" 0 1955.37 8131 7361 0
+rnode "vdd.n28" 0 0 8131 7361 0
+rnode "vdd.n29" 0 59.0237 8131 7361 0
+rnode "vdd.n30" 0 1155.28 8131 7361 0
+rnode "vdd.n31" 0 2901.71 7627 10812 0
+rnode "vdd" 0 354.238 5000 10712 0
+resist "vdd.n28" "vdd.n27" 0.000574547
+resist "vdd.n30" "vdd.n29" 0.000665813
+resist "vdd.n27" "vdd.n26" 0.000665813
+resist "vdd.n26" "vdd.n25" 0.000665813
+resist "vdd.n29" "vdd.n28" 0.00109127
+resist "vdd.n16" "vdd.n15" 0.00199866
+resist "vdd.n15" "vdd.n14" 0.00199866
+resist "vdd.n17" "vdd.n16" 0.00199866
+resist "vdd.n18" "vdd.n17" 0.00199866
+resist "vdd.n16" "vdd.n13" 0.00199866
+resist "vdd.n13" "vdd.n12" 0.00199866
+resist "vdd.n1" "vdd.n0" 0.00774837
+resist "vdd.n7" "vdd.n6" 0.00774837
+resist "vdd.n6" "vdd.n5" 0.00774837
+resist "vdd.n24" "vdd.n23" 0.0145463
+resist "vdd.n22" "vdd.n21" 0.0145463
+resist "vdd.n24" "vdd.n22" 0.0145463
+resist "vdd.n4" "vdd.n3" 0.0145463
+resist "vdd.n7" "vdd.n4" 0.0145463
+resist "vdd.n8" "vdd.n7" 0.0145463
+resist "vdd.n10" "vdd.n8" 0.0145463
+resist "vdd.n24" "vdd.n19" 0.189547
+resist "vdd" "vdd.n31" 1.02617
+resist "vdd.n30" "vdd.n24" 10.8822
+resist "vdd.n31" "vdd.n1" 14.2
+resist "vdd.n31" "vdd.n30" 38.478
+resist "vdd.n11" "vdd.n10" 41.3257
+resist "vdd.n10" "vdd.n9" 44.4343
+resist "vdd.n19" "vdd.n18" 105.051
+resist "vdd.n18" "vdd.n11" 108.251
+resist "vdd.n8" "vdd.n2" 857.647
+resist "vdd.n22" "vdd.n20" 857.647
+rnode "in2.t0" 0 0 7782 2989 0
+rnode "in2.n0" 0 0 7964 -600 0
+rnode "in2.n1" 0 0 8064 -500 0
+rnode "in2" 0 0 7964 -600 0
+resist "in2" "in2.n1" 0.0625
+resist "in2.n1" "in2.n0" 0.0625003
+resist "in2.n1" "in2.t0" 30.5853
+rnode "gnd.n0" 0 0 9565 6651 0
+rnode "gnd.n1" 0 0 9565 6651 0
+rnode "gnd.n2" 0 0 9565 6651 0
+rnode "gnd.n3" 0 0 9937 3352 0
+rnode "gnd.n4" 0 0 9937 3352 0
+rnode "gnd.n5" 0 0 9524 4000 0
+rnode "gnd.n6" 0 0 9565 53 0
+rnode "gnd.n7" 0 0 9565 53 0
+rnode "gnd.n8" 0 0 9565 53 0
+rnode "gnd.n9" 0 0 9637 -10 0
+rnode "gnd.n10" 0 0 9290 -10 0
+rnode "gnd.n11" 0 0 9290 -10 0
+rnode "gnd.n12" 0 0 9193 3352 0
+rnode "gnd.n13" 0 0 9193 3352 0
+rnode "gnd.n14" 0 0 9193 3352 0
+rnode "gnd.n15" 0 0 7898 2395 0
+rnode "gnd.n16" 0 0 8025 2989 0
+rnode "gnd.n17" 0 0 8025 2989 0
+rnode "gnd.n18" 0 0 8025 2989 0
+rnode "gnd.n19" 0 0 7539 2670 0
+rnode "gnd.n20" 0 0 7782 2653 0
+rnode "gnd.n21" 0 0 7782 2653 0
+rnode "gnd.n22" 0 0 7539 3308 0
+rnode "gnd.n23" 0 0 7782 3325 0
+rnode "gnd.n24" 0 0 7782 3325 0
+rnode "gnd.n25" 0 0 7782 3325 0
+rnode "gnd.n26" 0 0 7915 1210 0
+rnode "gnd.n27" 0 0 7915 1210 0
+rnode "gnd.n28" 0 0 7915 1210 0
+rnode "gnd.n29" 0 0 9210 -90 0
+rnode "gnd.n30" 0 0 8563 -10 0
+rnode "gnd.n31" 0 0 8563 -10 0
+rnode "gnd.n32" 0 0 7836 -10 0
+rnode "gnd.n33" 0 0 7836 -10 0
+rnode "gnd.n34" 0 0 7296 2653 0
+rnode "gnd.n35" 0 0 7296 2653 0
+rnode "gnd.n36" 0 0 7296 3325 0
+rnode "gnd.n37" 0 0 7296 3325 0
+rnode "gnd.n38" 0 0 7296 3325 0
+rnode "gnd.n39" 0 0 7539 3370 0
+rnode "gnd.n40" 0 0 7539 2610 0
+rnode "gnd.n41" 0 0 7539 2989 0
+rnode "gnd.n42" 0 0 7539 2989 0
+rnode "gnd.n43" 0 0 7539 2989 0
+rnode "gnd.n44" 0 0 7543 2367 0
+rnode "gnd.n45" 0 0 7543 2367 0
+rnode "gnd.n46" 0 0 7543 2367 0
+rnode "gnd.n47" 0 0 7543 53 0
+rnode "gnd.n48" 0 0 7543 53 0
+rnode "gnd.n49" 0 0 7627 -100 0
+rnode "gnd.n50" 0 0 7627 -100 0
+rnode "gnd.n51" 0 0 7543 -10 0
+rnode "gnd.n52" 0 0 7188 2367 0
+rnode "gnd.n53" 0 0 7188 53 0
+rnode "gnd.n54" 0 0 7171 1210 0
+rnode "gnd.n55" 0 0 7053 2989 0
+rnode "gnd.n56" 0 0 7053 2989 0
+rnode "gnd.n57" 0 0 7053 2989 0
+rnode "gnd.n58" 0 0 6939 1210 0
+rnode "gnd.n59" 0 0 6939 1210 0
+rnode "gnd.n60" 0 0 6939 1210 0
+rnode "gnd.n61" 0 0 7055 70 0
+rnode "gnd.n62" 0 0 7250 -10 0
+rnode "gnd.n63" 0 0 7250 -10 0
+rnode "gnd.n64" 0 0 6400 4035 0
+rnode "gnd.n65" 0 0 6565 4053 0
+rnode "gnd.n66" 0 0 6565 4053 0
+rnode "gnd.n67" 0 0 6565 4053 0
+rnode "gnd.n68" 0 0 6000 4000 0
+rnode "gnd.n69" 0 0 5913 860 0
+rnode "gnd.n70" 0 0 5913 9916 0
+rnode "gnd.n71" 0 0 5913 9916 0
+rnode "gnd.n72" 0 0 6330 9126 0
+rnode "gnd.n73" 0 0 6565 9143 0
+rnode "gnd.n74" 0 0 6565 9143 0
+rnode "gnd.n75" 0 0 6565 9143 0
+rnode "gnd.n76" 0 0 6095 9933 0
+rnode "gnd.n77" 0 0 6095 9933 0
+rnode "gnd.n78" 0 0 5731 9933 0
+rnode "gnd.n79" 0 0 5731 9933 0
+rnode "gnd.n80" 0 0 5731 9933 0
+rnode "gnd" 0 0 5058 5200 0
+rnode "gnd.n81" 0 0 5164 5400 0
+rnode "gnd.n82" 0 0 6747 6598 0
+rnode "gnd.n83" 0 0 6747 6598 0
+rnode "gnd.n84" 0 0 6747 6598 0
+rnode "gnd.n85" 0 0 6383 6598 0
+rnode "gnd.n86" 0 0 6383 6598 0
+rnode "gnd.n87" 0 0 6277 5388 0
+rnode "gnd.n88" 0 0 6277 5388 0
+rnode "gnd.n89" 0 0 5913 5388 0
+rnode "gnd.n90" 0 0 5913 5388 0
+rnode "gnd.n91" 0 0 5549 5388 0
+rnode "gnd.n92" 0 0 5549 5388 0
+rnode "gnd.n93" 0 0 5549 5388 0
+rnode "gnd.n94" 0 0 5731 843 0
+rnode "gnd.n95" 0 0 5731 843 0
+rnode "gnd.n96" 0 0 5913 860 0
+rnode "gnd.n97" 0 0 6095 843 0
+rnode "gnd.n98" 0 0 6095 843 0
+rnode "gnd.n99" 0 0 6095 843 0
+rnode "gnd.n100" 0 0 6453 1210 0
+rnode "gnd.n101" 0 0 6453 1210 0
+rnode "gnd.n102" 0 0 6453 1210 0
+rnode "gnd.n103" 0 0 7188 2395 0
+rnode "gnd.n104" 0 0 6696 2367 0
+rnode "gnd.n105" 0 0 6696 2367 0
+rnode "gnd.n106" 0 0 6696 2367 0
+rnode "gnd.n107" 0 0 6696 53 0
+rnode "gnd.n108" 0 0 6696 53 0
+rnode "gnd.n109" 0 0 6260 -10 0
+rnode "gnd.n110" 0 0 6260 -10 0
+rnode "vss" 0 0 5000 -200 0
+resist "gnd.n50" "gnd.n49" 1.73343e-08
+resist "gnd.n92" "gnd.n91" 0.00152003
+resist "gnd.n93" "gnd.n92" 0.00152003
+resist "gnd.n91" "gnd.n90" 0.00152003
+resist "gnd.n90" "gnd.n89" 0.00152003
+resist "gnd.n91" "gnd.n88" 0.00152003
+resist "gnd.n88" "gnd.n87" 0.00152003
+resist "gnd.n13" "gnd.n12" 0.00211132
+resist "gnd.n14" "gnd.n13" 0.00211132
+resist "gnd.n4" "gnd.n3" 0.00211132
+resist "gnd.n84" "gnd.n83" 0.00276136
+resist "gnd.n83" "gnd.n82" 0.00276136
+resist "gnd.n85" "gnd.n84" 0.00276136
+resist "gnd.n86" "gnd.n85" 0.00276136
+resist "gnd.n60" "gnd.n59" 0.00318683
+resist "gnd.n27" "gnd.n26" 0.00637366
+resist "gnd.n28" "gnd.n27" 0.00637366
+resist "gnd.n101" "gnd.n100" 0.00637366
+resist "gnd.n102" "gnd.n101" 0.00637366
+resist "gnd.n59" "gnd.n58" 0.00637366
+resist "gnd.n59" "gnd.n54" 0.00637366
+resist "gnd.n46" "gnd.n45" 0.0245016
+resist "gnd.n45" "gnd.n44" 0.0245016
+resist "gnd.n8" "gnd.n7" 0.0245016
+resist "gnd.n47" "gnd.n46" 0.0245016
+resist "gnd.n48" "gnd.n47" 0.0245016
+resist "gnd.n1" "gnd.n0" 0.0245016
+resist "gnd.n2" "gnd.n1" 0.0245016
+resist "gnd.n7" "gnd.n6" 0.0245974
+resist "gnd.n18" "gnd.n17" 0.0281765
+resist "gnd.n17" "gnd.n16" 0.0281765
+resist "gnd.n57" "gnd.n56" 0.0281765
+resist "gnd.n56" "gnd.n55" 0.0281765
+resist "gnd.n43" "gnd.n42" 0.0281765
+resist "gnd.n42" "gnd.n41" 0.0281765
+resist "gnd.n51" "gnd.n50" 0.0328125
+resist "gnd.n106" "gnd.n105" 0.0459978
+resist "gnd.n105" "gnd.n104" 0.0459978
+resist "gnd.n107" "gnd.n106" 0.0459978
+resist "gnd.n108" "gnd.n107" 0.0459978
+resist "gnd.n37" "gnd.n36" 0.0459978
+resist "gnd.n38" "gnd.n37" 0.0459978
+resist "gnd.n25" "gnd.n24" 0.0459978
+resist "gnd.n24" "gnd.n23" 0.0459978
+resist "gnd.n36" "gnd.n35" 0.0459978
+resist "gnd.n35" "gnd.n34" 0.0459978
+resist "gnd.n25" "gnd.n21" 0.0459978
+resist "gnd.n21" "gnd.n20" 0.0459978
+resist "gnd.n81" "gnd" 0.078125
+resist "gnd.n95" "gnd.n94" 0.078629
+resist "gnd.n99" "gnd.n98" 0.078629
+resist "gnd.n98" "gnd.n97" 0.078629
+resist "gnd.n79" "gnd.n78" 0.078629
+resist "gnd.n80" "gnd.n79" 0.078629
+resist "gnd.n78" "gnd.n77" 0.078629
+resist "gnd.n77" "gnd.n76" 0.078629
+resist "gnd.n74" "gnd.n73" 0.078629
+resist "gnd.n75" "gnd.n74" 0.078629
+resist "gnd.n67" "gnd.n66" 0.078629
+resist "gnd.n66" "gnd.n65" 0.078629
+resist "gnd.n50" "gnd.n32" 0.0816406
+resist "gnd.n63" "gnd.n51" 0.114453
+resist "gnd.n93" "gnd.n81" 0.271378
+resist "gnd.n32" "gnd.n31" 0.283984
+resist "gnd.n31" "gnd.n11" 0.283984
+resist "gnd.n110" "gnd.n63" 0.386719
+resist "gnd.n75" "gnd.n72" 0.402963
+resist "vss" "gnd.n110" 0.492188
+resist "gnd.n30" "gnd.n29" 0.780488
+resist "gnd.n9" "gnd.n8" 2.88
+resist "gnd.n49" "gnd.n48" 3.36
+resist "gnd.n46" "gnd.n43" 3.81779
+resist "gnd.n62" "gnd.n61" 7.8
+resist "gnd.n49" "gnd.n33" 8.36
+resist "gnd.n109" "gnd.n108" 8.92725
+resist "gnd.n11" "gnd.n10" 9
+resist "gnd.n63" "gnd.n62" 9
+resist "gnd.n31" "gnd.n30" 9.3
+resist "gnd.n110" "gnd.n109" 9.3
+resist "gnd.n11" "gnd.n9" 9.43555
+resist "gnd.n28" "gnd.n15" 11.561
+resist "gnd.n30" "gnd.n28" 11.9024
+resist "gnd.n80" "gnd.n70" 27.7333
+resist "gnd.n65" "gnd.n64" 30.1714
+resist "gnd.n104" "gnd.n103" 32.1422
+resist "gnd.n96" "gnd.n95" 33.28
+resist "gnd.n97" "gnd.n96" 33.28
+resist "gnd.n39" "gnd.n38" 33.8087
+resist "gnd.n6" "gnd.n5" 39.1332
+resist "gnd.n76" "gnd.n75" 44.4614
+resist "gnd.n61" "gnd.n60" 54.8571
+resist "gnd.n99" "gnd.n68" 90.6725
+resist "gnd.n26" "gnd.n18" 104.989
+resist "gnd.n15" "gnd.n14" 106.563
+resist "gnd.n109" "gnd.n102" 107.202
+resist "gnd.n58" "gnd.n57" 108.807
+resist "gnd.n87" "gnd.n86" 110.629
+resist "gnd.n68" "gnd.n67" 116.6
+resist "gnd.n41" "gnd.n40" 120.094
+resist "gnd.n41" "gnd.n39" 120.094
+resist "gnd.n26" "gnd.n25" 126.941
+resist "gnd.n81" "gnd.n80" 128.221
+resist "gnd.n95" "gnd.n93" 133.363
+resist "gnd.n9" "gnd.n4" 225.368
+resist "gnd.n4" "gnd.n2" 277.202
+resist "gnd.n100" "gnd.n99" 341.692
+resist "gnd.n59" "gnd.n53" 856.876
+resist "gnd.n59" "gnd.n52" 856.876
+resist "gnd.n98" "gnd.n69" 1054.53
+resist "gnd.n79" "gnd.n71" 1054.53
+resist "gnd.n21" "gnd.n19" 1407.97
+resist "gnd.n24" "gnd.n22" 1407.97
+killnode "m1_7080_2810#"
+rnode "m1_7080_2810.t2" 0 589.144 7782 5219 0
+rnode "m1_7080_2810.t0" 0 588.166 7296 5219 0
+rnode "m1_7080_2810.n0" 0 1147.48 7296 4155 0
+rnode "m1_7080_2810.t1" 0 275.21 7196 5219 0
+resist "m1_7080_2810.t1" "m1_7080_2810.n0" 4.44497
+resist "m1_7080_2810.n0" "m1_7080_2810.t0" 256.429
+resist "m1_7080_2810.n0" "m1_7080_2810.t2" 257.476
+rnode "in1.t0" 0 0 7296 2989 0
+rnode "in1.n0" 0 0 6916 -600 0
+rnode "in1.n1" 0 0 7016 -500 0
+rnode "in1" 0 0 6916 -600 0
+resist "in1" "in1.n1" 0.0625
+resist "in1.n1" "in1.n0" 0.0625003
+resist "in1.n1" "in1.t0" 30.583
+device msubckt sky130_fd_pr__pfet_01v8 7682 4219 7683 4220  "vdd" "m1_7080_2810.t2" 400 0 "vdd" 2000 116000,4116 "a_8466_4122#" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8 7196 4219 7197 4220  "vdd" "m1_7080_2810.t0" 400 0 "m1_7080_2810.t1" 2000 116000,4116 "vdd" 2000 116000,4116
+device msubckt sky130_fd_pr__nfet_01v8 7682 2810 7683 2811  "gnd" "in2.t0" 400 0 "m1_7402_2810#" 358 20764,832 "a_8466_4122#" 358 20764,832
+device msubckt sky130_fd_pr__nfet_01v8 7196 2810 7197 2811  "gnd" "in1.t0" 400 0 "m1_7080_2810#" 358 20764,832 "m1_7402_2810#" 358 20764,832

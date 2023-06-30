@@ -1,0 +1,54 @@
+* NGSPICE file created from opamp.ext - technology: sky130B
+
+.subckt sky130_fd_pr__nfet_01v8_34YWRA a_n100_n267# a_100_n179# a_n260_n353# a_n158_n179#
+X0 a_100_n179# a_n100_n267# a_n158_n179# a_n260_n353# sky130_fd_pr__nfet_01v8 ad=0.519 pd=4.16 as=0.519 ps=4.16 w=1.79 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_GGAEPD a_n158_n1000# a_n100_n1097# w_n296_n1219# a_100_n1000#
+X0 a_100_n1000# a_n100_n1097# a_n158_n1000# w_n296_n1219# sky130_fd_pr__pfet_01v8 ad=2.9 pd=20.6 as=2.9 ps=20.6 w=10 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_EF4BLE a_229_n1000# a_n389_n1174# a_n229_n1088# a_n287_n1000#
++ a_29_n1088# a_n29_n1000#
+X0 a_n29_n1000# a_n229_n1088# a_n287_n1000# a_n389_n1174# sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.3 as=2.9 ps=20.6 w=10 l=1
+X1 a_229_n1000# a_29_n1088# a_n29_n1000# a_n389_n1174# sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.6 as=1.45 ps=10.3 w=10 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_6WXQK8 a_n100_n1088# a_n158_n1000# a_100_n1000# a_n260_n1174#
+X0 a_100_n1000# a_n100_n1088# a_n158_n1000# a_n260_n1174# sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.6 as=2.9 ps=20.6 w=10 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_RLGYC7 a_n287_n3142# w_n425_n3361# a_n29_n3142# a_n229_n3239#
++ a_229_n3142# a_29_n3239#
+X0 a_229_n3142# a_29_n3239# a_n29_n3142# w_n425_n3361# sky130_fd_pr__pfet_01v8 ad=9.11 pd=63.4 as=4.56 ps=31.7 w=31.4 l=1
+X1 a_n29_n3142# a_n229_n3239# a_n287_n3142# w_n425_n3361# sky130_fd_pr__pfet_01v8 ad=4.56 pd=31.7 as=9.11 ps=63.4 w=31.4 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_6WGMFU a_n287_n3142# a_n229_n3230# a_n29_n3142# a_229_n3142#
++ a_29_n3230# a_n389_n3316#
+X0 a_n29_n3142# a_n229_n3230# a_n287_n3142# a_n389_n3316# sky130_fd_pr__nfet_01v8 ad=4.56 pd=31.7 as=9.11 ps=63.4 w=31.4 l=1
+X1 a_229_n3142# a_29_n3230# a_n29_n3142# a_n389_n3316# sky130_fd_pr__nfet_01v8 ad=9.11 pd=63.4 as=4.56 ps=31.7 w=31.4 l=1
+.ends
+
+.subckt sky130_fd_pr__res_high_po_0p69_NKSDAM a_n69_n4432# a_n199_n4562# a_n69_4000#
+X0 a_n69_n4432# a_n69_4000# a_n199_n4562# sky130_fd_pr__res_high_po_0p69 l=40
+.ends
+
+.subckt sky130_fd_pr__res_high_po_0p69_YVB7ZU a_n199_n2562# a_n69_2000# a_n69_n2432#
+X0 a_n69_n2432# a_n69_2000# a_n199_n2562# sky130_fd_pr__res_high_po_0p69 l=20
+.ends
+
+.subckt opamp vdd vss in1 in2 out2
+Xxm1 in1 m1_7402_2810# vss m1_7080_2810# sky130_fd_pr__nfet_01v8_34YWRA
+Xxm2 in2 a_8466_4122# vss m1_7402_2810# sky130_fd_pr__nfet_01v8_34YWRA
+Xxm3 m1_7080_2810# m1_7080_2810# vdd vdd sky130_fd_pr__pfet_01v8_GGAEPD
+Xxm4 vdd m1_7080_2810# vdd a_8466_4122# sky130_fd_pr__pfet_01v8_GGAEPD
+Xxm5 vss vss a_9536_122# vss a_9536_122# m1_7402_2810# sky130_fd_pr__nfet_01v8_EF4BLE
+Xxm6 a_9536_122# vss a_9536_122# vss sky130_fd_pr__nfet_01v8_6WXQK8
+Xxm7 vdd vdd out2 a_8466_4122# vdd a_8466_4122# sky130_fd_pr__pfet_01v8_RLGYC7
+Xxm8 vss a_9536_122# out2 vss a_9536_122# vss sky130_fd_pr__nfet_01v8_6WGMFU
+XxR2 m1_5662_956# vss m1_6026_9388# sky130_fd_pr__res_high_po_0p69_NKSDAM
+XxR1 m1_5662_956# vss vdd sky130_fd_pr__res_high_po_0p69_NKSDAM
+XxR3 vss m1_6026_9388# a_9536_122# sky130_fd_pr__res_high_po_0p69_YVB7ZU
+.ends
+
